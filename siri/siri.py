@@ -10,10 +10,10 @@ from config import Config
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 ABS="Developer"
-APPER="shamilhabeeb"
+APPER="Xstro"
 OWNER="Owner"
-GITCLONE="github.com/shamilhabeebnelli/song-bot"
-B2="telegram.dog/shamilhabeeb"
+GITCLONE="github.com/Xstro"
+B2="telegram.dog/GxNeo"
 BUTTON1="📜 Source Code 📜"
 
 def time_to_seconds(time):
@@ -43,7 +43,7 @@ def a(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('`Searching... Please Wait...`')
+    m = message.reply('`sᴇᴀʀᴄʜɪɴɢ..ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...`')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -88,7 +88,7 @@ def a(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'🎶 <b>ᴛɪᴛʟᴇ:</b> <a href="{link}">{title}</a>\n⌚ <b>Duration:</b> <code>{duration}</code>\n📻 <b>ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ:</b> <a href="https://t.me/musicupdatez">ᴍᴜsɪᴄ.ᴜᴘᴅᴀᴛᴇs</a>'
+        rep = f'🎶 <b>ᴛɪᴛʟᴇ:</b> <a href="{link}">{title}</a>\n⌚ <b>ᴅᴜʀᴀᴛɪᴏɴ:</b> <code>{duration}</code>\n📻 <b>ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ:</b> <a href="https://t.me/musicupdatez">ᴍᴜsɪᴄ.ᴜᴘᴅᴀᴛᴇs</a>'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -96,7 +96,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('**An internal Error Occured, Report This @redbullfed!!**')
+        m.edit('**An internal Error Occured, Report This @GxNeo!!**')
         print(e)
     try:
         os.remove(audio_file)
