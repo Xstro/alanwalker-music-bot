@@ -13,7 +13,7 @@ ABS="Developer"
 APPER="Xstro"
 OWNER="Owner"
 GITCLONE="github.com/Xstro"
-B2="telegram.dog/GxNeo"
+B2="telegram.dog/KyloRen_TG"
 BUTTON1="📜 Source Code 📜"
 
 def time_to_seconds(time):
