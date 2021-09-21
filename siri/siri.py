@@ -9,9 +9,9 @@ import time
 from config import Config
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-ABS="Developer"
+ABS="🍁 ᴅᴇᴠᴏʟᴏᴘᴇʀ 🍁"
 APPER="Xstro"
-OWNER="Owner"
+OWNER="🍂 ᴏᴡɴᴇʀ 🍂"
 TELEGRAM="telegram.dog/Cinemabranthen"
 B2="telegram.dog/Elliot_TG"
 BUTTON1="🍿ᴊᴏɪɴ ᴏᴜʀ ɢʀᴏᴜᴘ🍿"
